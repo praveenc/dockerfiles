@@ -7,6 +7,10 @@
 * Installs Python 3.5.4 and then installs azure-cli
 * Installs dotnet-2.1 sdk 
 
+# Reference docs
+* [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
+* [Install .NET Core SDK on Linux Ubuntu 16.04](https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current)
+
 ## Build this image using docker
 ```$ docker build -t dotnetcorebuild .```
 
