@@ -4,7 +4,7 @@
 * Installs Python 3.5.4 and then installs azure-cli
 * Installs dotnet-2.1 sdk 
 * image published to praveenc/dotnet21-pwsh60-azcli20 on docker hub
-** could be used as build container in bitbucket pipelines
+* image could be used as build container in bitbucket pipelines
 
 ## BITBUCKET-PIPELINES.YML
 ```
