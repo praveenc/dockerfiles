@@ -10,6 +10,7 @@ RUN apt-get install -y python3 && \
     apt-key adv --keyserver packages.microsoft.com --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893 && \
     apt-get install -y apt-transport-https && \
     apt-get update && \
+		apt-get install -y zip unzip && \
     apt-get install -y azure-cli
 
 # Install Dotnet core 2.1.103 sdk
