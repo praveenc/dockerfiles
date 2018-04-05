@@ -11,6 +11,9 @@
 * [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 * [Install .NET Core SDK on Linux Ubuntu 16.04](https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current)
 
+## Pull this image from docker hub container registry
+```$ docker pull praveenc/dotnet21-pwsh60-azcli20```
+
 ## Build this image using docker
 ```$ docker build -t dotnetcorebuild .```
 
