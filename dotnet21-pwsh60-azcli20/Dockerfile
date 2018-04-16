@@ -12,7 +12,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-key adv --keyserver packages.microsoft.com --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893 && \
     apt-get install -y apt-transport-https && \
     apt-get update && \
-		apt-get install -y zip unzip && \
+		apt-get install -y zip unzip ssh sshpass && \
     apt-get install -y azure-cli &&  \
 		curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
     mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
