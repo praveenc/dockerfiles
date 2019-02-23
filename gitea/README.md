@@ -9,10 +9,9 @@
   - Notary: 0.6.1
   - Credential Helper: 0.60
   - Kubernetes: v1.10.11
-  
-- `Postgres 11` alpine docker image
-  - `docker pull postgres:11.2-alpine`
-
+- `Postgres` docker image
+  - `docker pull postgres:latest`
+  - We use the full version of `postgres` instead of the alpine image `postgres:11.2-alpine` as the alpine version doesn't include `pg_dump` for backing up the database
 - Mount the Volume and create `gitea` data folders on the mounted volume For e.g. on macOS, external drives are automatically mounted to `/Volumes/{DRIVE_NAME}/`, if you are using a new external drive then create a folder named `gitea` and sub-folders named `data` and `postgres`. The `data` folder will store all `git` repo info and `postgres` will store all `postgresql` related data. This new mounted Volume will now act as a persistent data volume for your self-hosted git server
 
 ## Installation Instructions
