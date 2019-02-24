@@ -1,0 +1,17 @@
+version: "3"
+
+networks:
+  registry:
+    external: false
+
+services:
+
+  registry_mirror:
+    image: registry:2
+    networks:
+      - registry
+    ports:
+      - "5000:5000"
+    volumes:
+      - '/Volumes/WD-Passport-500GB/persistent_volume/data/registry/registry-mirror-data:/var/lib/registry'
+      - '/Volumes/WD-Passport-500GB/persistent_volume/data/registry/registry-mirror-config.yml:/etc/docker/registry/config.yml'

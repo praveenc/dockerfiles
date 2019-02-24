@@ -1,0 +1,17 @@
+version: "3"
+
+networks:
+  portainer:
+    external: false
+
+services:
+  app:
+    image: portainer/portainer
+    networks:
+      - portainer
+    ports:
+      - "9000:9000"
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - '/Volumes/WD-Passport-500GB/persistent_volume/data/portainer:/data'
+    command: -H unix:///var/run/docker.sock
