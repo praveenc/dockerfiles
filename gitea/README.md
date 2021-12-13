@@ -2,13 +2,14 @@
 
 ## Pre-requisites (Mac)
 
-- Install Docker Desktop Community for mac (with docker-compose)
-  - Engine: 18.09.2
-  - Compose: 1.23.2
+- Install Docker Desktop Community v4.3.1 for mac (with docker-compose)
+  - Engine: 20.10.11
+  - Compose: v2.2.1
+  - SynkL v1.563.0
   - Machine: 0.16.1
   - Notary: 0.6.1
   - Credential Helper: 0.60
-  - Kubernetes: v1.10.11
+  - Kubernetes: v1.22.4
 - `Gitea 1.15.7` version (Dec 2021)
 - `Postgres 11` docker image
   - `docker pull postgres:11`
